@@ -1,6 +1,8 @@
-# Smartlook plugin - OpenCart
+# Smartlook plugin - OpenCart 3.0
 
-Compatibility: versions 3000 - 3020.
+## Compatibility
+
+Versions: 3.0.0.0 - 3.0.2.0
 
 ## Copyright
 
