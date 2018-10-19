@@ -110,7 +110,7 @@
 			event.preventDefault();
 			var $loader = $(this).find('.loader'), $button = $(this).find('button'), $codeForm = $('.js-project-form');
 			var project = $codeForm.find('select[name="project"]').val();
-			console.log(project);
+
 			if (!project) {
 				project = $codeForm.find('input[name="projectName"]').val();
 				if (!project) {

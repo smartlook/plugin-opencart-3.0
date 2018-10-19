@@ -1,7 +1,4 @@
 <?php
-/**
- * @author Tomáš Blatný
- */
 
 use Smartlook\Webapi\Client;
 
@@ -32,7 +29,7 @@ class ControllerExtensionModuleSmartlook extends Controller
 				case 'register':
 					$api = new Client;
 					$result = $_GET['action'] === 'register' ?
-						$api->signUp(array('authKey' => self::AUTH_KEY, 'email' => $_POST['email'], 'password' => $_POST['password'], 'lang' => $this->language->get('code'), 'consentTerms.consentTerms' => 1)) :
+						$api->signUp(array('authKey' => self::AUTH_KEY, 'email' => $_POST['email'], 'password' => $_POST['password'], 'lang' => $this->language->get('code'), 'consentTerms' => 1)) :
 						$api->signIn(array('authKey' => self::AUTH_KEY, 'email' => $_POST['email'], 'password' => $_POST['password'],));
 
 					if ($result['ok']) {
